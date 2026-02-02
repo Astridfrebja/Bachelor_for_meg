@@ -1,0 +1,24 @@
+.button, button {
+    background-color: #98ad75;
+    border: 1px solid #cccccc;
+    color: #111111;
+    padding: 12px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.15s ease, transform 0.08s ease;
+}
+
+.button:hover, button:hover {
+    background-color: #708057;
+}
+
+.button:active, button:active {
+    transform: translateY(1px);
+}
+
+.button:focus, button:focus {
+    outline: 3px solid #9ecaed;
+    outline-offset: 2px;
+}
