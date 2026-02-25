@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <title>Beslutningsverktøy for palliativ behandling</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
 
-    <header>
+<header>
     <h1>Beslutningsverktøy for palliativ behandling</h1>
 
     <div class="right-menu">
@@ -17,38 +16,62 @@
             <input type="search" placeholder="Søk">
         </div>
 
-        <div class="hamburger" id="hamburger">
+        <button class="hamburger" id="hamburger" aria-label="Meny">
             <span></span>
             <span></span>
             <span></span>
+        </button>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Dokumentasjon</a>
+            <a href="#">Ressurser</a>
+            <a href="#">Helsepersonell / Samarbeidspartnere</a>
         </div>
     </div>
-</header>
+</header> 
 
-<nav id="sideMenu" class="side-menu">
-    <a href="#">Hjem</a>
-    <a href="#">Om prosjektet</a>
-    <a href="#">Kontakt</a>
-    <a href="#">Retningslinjer</a>
-</nav>
+<main>
 
-    <main>
-        <button class="step-button" onclick="location.href='gronne_bobler/pasient_meldt.html'">
+    <div class="flow">
+        <div class="step">
+            <button class="step-button"
+            onclick="location.href='gronne_bobler/pasient_meldt.html'">
             Palliativ pasient meldt inn til kommunen
         </button>
+        </div>
 
-        <button class="step-button" onclick="location.href='gronne_bobler/mottak_pasient.html'">
-            Mottak av pasient
-        </button>
+    <div class="flow">
+        <div class="step">
+            <button class="step-button"
+                onclick="location.href='gronne_bobler/mottak_pasient.html'">
+                Mottak av pasient
+            </button>
+        </div>
+    
+    <div class="flow">
+        <div class="step">
+            <button class="step-button"
+            onclick="location.href='gronne_bobler/tilbud.html'">
+                Tilbud om forhåndssamtale
+            </button>
+        </div>
 
-        <button class="step-button" onclick="location.href='gronne_bobler/tilbud.html'">
-            Tilbud om forhåndssamtale
-        </button>
+    <div class="flow">
+        <div class="step">
+            <button class="step-button"
+            onclick="location.href='gronne_bobler/pasient_dod.html'">
+                Pasient død hjemme
+            </button>
+        </div>
+    </div>
 
-        <button class="step-button" onclick="location.href='gronne_bobler/pasient_dod.html'">
-            Pasient død hjemme
-        </button>
-    </main>
+    <div class="info">
+        <div class="info-box">Her finner du informasjon om sak x, y, z</div>
+        <div class="info-box">Her finner du informasjon om sak x, y, z</div>
+    </div>
 
+</main>
+
+<script src="script.js"></script>
 </body>
 </html>

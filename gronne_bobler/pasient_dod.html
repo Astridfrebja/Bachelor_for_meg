@@ -6,19 +6,33 @@
         <link rel="stylesheet" href="../style.css">
     </head>
     <body>
-         <header>
-        <h1>Beslutningsverktøy for palliativ behandling</h1>
+        <header>
+    <h1>Beslutningsverktøy for palliativ behandling</h1>
 
+    <div class="right-menu">
         <div class="search-container">
             <input type="search" placeholder="Søk">
-            <button class="button">Søk</button>
         </div>
-    </header>
+
+        <button class="hamburger" id="hamburger" aria-label="Meny">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="dropdown-menu" id="dropdownMenu">
+            <a href="#">Dokumentasjon</a>
+            <a href="#">Ressurser</a>
+            <a href="#">Helsepersonell / Samarbeidspartnere</a>
+        </div>
+    </div>
+</header>
     <main>
-        <h1>Pasient død hjemme</h1>
+        <h2>Pasient død hjemme</h2>
         <p>Dette er siden du kommer til hvis du trykker på pasient død hjemme</p>
         <a href="../index.html" class = "button">Tilbake til start</a>
         </main>
+        <script src="../script.js"></script>
     </body>
 
 </html>

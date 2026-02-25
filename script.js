@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
 
     const hamburger = document.getElementById("hamburger");
-    const sideMenu = document.getElementById("sideMenu");
+    const dropdown = document.getElementById("dropdownMenu");
 
-    hamburger.addEventListener("click", function () {
-        sideMenu.classList.toggle("active");
+    hamburger.addEventListener("click", function (e) {
+        e.stopPropagation();
+        dropdown.classList.toggle("active");
+    });
+
+    document.addEventListener("click", function () {
+        dropdown.classList.remove("active");
     });
 
 });
