@@ -63,5 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
         searchResults.style.display = filtered.length ? "flex" : "none";
     });
+    document.addEventListener("click", function (e) {
+    if (!e.target.closest(".search-container")) {
+        searchResults.style.display = "none";
+    }
+});
 
 });
